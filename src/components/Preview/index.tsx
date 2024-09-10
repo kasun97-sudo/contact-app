@@ -67,8 +67,8 @@ function Test (styleProps: any){
     .addPhoneNumber(+94771330065, 'WORK')
     .addAddress('31/2A', 'sangamiththa lane', 'eliot road', 'galle','', '80000', 'srilanka')
     .addPhoto(image , 'png')
-    .addSocial('https://www.linkedin.com/in/kasun-thenuwara-75486525a/', 'Linkedin', 'madusanka-wanigasuriya')
-    .addSocial('https://www.facebook.com/kazun.drulz' , 'Facebook' , 'madusanka.wanigasuriya')
+    .addSocial('https://www.linkedin.com/in/kasun-thenuwara-75486525a/', 'Linkedin', 'kasun-thenuwara')
+    .addSocial('https://www.facebook.com/kazun.drulz' , 'Facebook' , 'kasun.thenuwara')
     .addURL('https://kasun97-sudo.github.io/portfolio-web-site/')
 
     // console.log(myVCard.toString());
