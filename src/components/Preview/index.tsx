@@ -59,7 +59,6 @@ function Test (styleProps: any){
     // Add personal data
     .addName(lastname, firstname, additional, prefix, suffix)
     // Add work data
-    .addCompany('Free Lancer')
     .addJobtitle('Software Engineer / Full Stack Developer')
     .addRole('Software Engineer / Full Stack Developer')
     .addEmail('iamkasun97@gmail.com')
