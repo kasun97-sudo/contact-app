@@ -87,7 +87,7 @@ function Test (styleProps: any){
 
     window.addEventListener('resize' , dis)
     return (
-        <Container maxWidth="sm" >
+        <Container maxWidth="sm" style={{padding : 0}}>
         <div >   
             <div style={{display : 'flex' , justifyContent : 'center' , width : '100%'}}>
             <div className="card profile-card-3">
@@ -234,9 +234,9 @@ function Test (styleProps: any){
                     </List>
                 }
                 <Grid container >
-                    <Grid item xs={9.5}>
+                    <Grid item xs={9.9}>
                     </Grid>
-                    <Grid item xs={0.5}>
+                    <Grid item xs={0.1}>
                     <div >
                     <Button onClick={() => createVCF()} style={{borderRadius : '50%' , position : 'fixed' , backgroundColor : '#3385ff', bottom : 10, }} sx={{ zIndex: 2000 }}><PersonAddIcon  sx={{width : 28 , height : 30 , color : 'white' , marginTop : 1, marginBottom : 1 , marginLeft : 0.9 , marginRight : 1}} /></Button>
                     </div>
