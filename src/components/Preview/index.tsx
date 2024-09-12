@@ -92,13 +92,13 @@ function Test (styleProps: any){
             <div style={{display : 'flex' , justifyContent : 'center' , width : '100%'}}>
             <div className="card profile-card-3">
     		        <div className={width >= 500 ? 'background-block' : 'background-block-phone'}>
-    		            <img src={require('../../assets/images/bg.png')} alt="profile-sample1" className="background"/>
+    		            {/* <img  alt="profile-sample1" className="background"/> */}
     		        </div>
     		        <div className="profile-thumb-block">
     		            <img src={require("../../assets/images/new.jpg")} alt="profile-image" className="profile" />
     		        </div>
     		        <div className="card-content" >
-                    <h2>Kasun Thenuwara<VerifiedIcon sx={{color : 'blue'}}/></h2>
+                    <h2>Kasun Thenuwara<VerifiedIcon sx={{color : '#0066ff'}}/></h2>
                     <p>Software Engineer</p>
                     </div>
                 </div>
@@ -120,30 +120,30 @@ function Test (styleProps: any){
                         borderRadius : '10px'
                     }}
                     >
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'tel:+94771330065'}>
                         <ListItemAvatar>
                         <Avatar>
                             <PhoneAndroidIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Mobile Phone" secondary={<a href="tel:+94771330065" style={{color : 'grey'}}>+94771330065</a>} />
+                        <ListItemText primary="Mobile Phone" secondary={+94771330065} />
                         </ListItem>
                         <Divider variant="inset" component="li" />
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'tel:+94771330065'}>
                         <ListItemAvatar>
                         <Avatar>
                             <LocalPhoneIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Extension" secondary={<a href="tel:+94771330065" style={{color : 'grey'}}>+94771330065</a>} />
+                        <ListItemText primary="Extension" secondary={+94771330065} />
                         </ListItem>
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'mailto:iamkasun97@gmail.com'}>
                         <ListItemAvatar>
                         <Avatar>
                             <EmailIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Email" secondary={<a onClick={() => window.location.href = 'mailto:iamkasun97@gmail.com'}>iamkasun97@gmail.com</a>} />              
+                        <ListItemText primary="Email" secondary={"iamkasun97@gmail.com"} />              
                         </ListItem>
                         <Divider variant="inset" component="li" />                       
                         <ListItem>
@@ -175,31 +175,31 @@ function Test (styleProps: any){
                         <ListItemText primary="Company" secondary="Adeona Technologies (Private) Limited" />
                         </ListItem>
                         <Divider variant="inset" component="li" />
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'https://kasun97-sudo.github.io/portfolio-web-site/'}>
                         <ListItemAvatar>
                         <Avatar>
                             <LanguageIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Personal Web"  secondary={<a href='https://kasun97-sudo.github.io/portfolio-web-site/' style={{color : 'grey'}}>https://kasun97-sudo.github.io/portfolio-web-site/</a>}/>
+                        <ListItemText primary="Personal Web"  secondary={<a style={{color : 'grey'}}>https://kasun97-sudo.github.io/portfolio-web-site/</a>}/>
                         </ListItem>
                         <Divider variant="inset" component="li" />
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'mailto:iamkasun97@gmail.com'}>
                         <ListItemAvatar>
                         <Avatar>
                             <EmailIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Email" secondary={<a onClick={() => window.location.href = 'mailto:iamkasun97@gmail.com'}>iamkasun97@gmail.com</a>} />              
+                        <ListItemText primary="Email" secondary={<a>iamkasun97@gmail.com</a>} />              
                         </ListItem>
                         <Divider variant="inset" component="li" />  
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'tel:+94771330065'}>
                         <ListItemAvatar>
                         <Avatar>
                             <LocalPhoneIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Hotline" secondary={<a href="tel:+94771330065" style={{color : 'grey'}}>+94771330065</a>} />
+                        <ListItemText primary="Hotline" secondary={<a style={{color : 'grey'}}>+94771330065</a>} />
                         </ListItem>
                         <Divider variant="inset" component="li" />
                     </List>
@@ -213,22 +213,22 @@ function Test (styleProps: any){
                         borderRadius : '10px'
                     }}
                     >
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'https://www.facebook.com/kazun.drulz'}>
                         <ListItemAvatar>
                         <Avatar>
                             <FacebookIcon />
                         </Avatar>
                         </ListItemAvatar>                      
-                        <ListItemText primary="Facebook"  secondary={<a href='https://www.facebook.com/kazun.drulz' style={{color : 'grey'}}>https://www.facebook.com/</a>}/>
+                        <ListItemText primary="Facebook"  secondary={<a style={{color : 'grey'}}>https://www.facebook.com/</a>}/>
                         </ListItem>
                         <Divider variant="inset" component="li" />
-                        <ListItem>
+                        <ListItem onClick={() => window.location.href = 'https://www.linkedin.com/in/kasun-thenuwara-75486525a/'}>
                         <ListItemAvatar>
                         <Avatar>
                             <LinkedInIcon />
                         </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary="Linkedin"  secondary={<a href='https://www.linkedin.com/in/kasun-thenuwara-75486525a/' style={{color : 'grey'}}>https://www.linkedin.com/in/kasun-thenuwara-75486525a/</a>}/>
+                        <ListItemText primary="Linkedin"  secondary={<a style={{color : 'grey'}}>https://www.linkedin.com/in/kasun-thenuwara-75486525a/</a>}/>
                         </ListItem>
                         <Divider variant="inset" component="li" />
                     </List>
@@ -238,7 +238,7 @@ function Test (styleProps: any){
                     </Grid>
                     <Grid item xs={0.5}>
                     <div >
-                    <Button onClick={() => createVCF()} style={{borderRadius : '50%' , position : 'fixed' , backgroundColor : '#C633F9', bottom : 10, }} sx={{ zIndex: 2000 }}><PersonAddIcon  sx={{width : 28 , height : 30 , color : 'white' , marginTop : 1, marginBottom : 1 , marginLeft : 0.9 , marginRight : 1}} /></Button>
+                    <Button onClick={() => createVCF()} style={{borderRadius : '50%' , position : 'fixed' , backgroundColor : '#3385ff', bottom : 10, }} sx={{ zIndex: 2000 }}><PersonAddIcon  sx={{width : 28 , height : 30 , color : 'white' , marginTop : 1, marginBottom : 1 , marginLeft : 0.9 , marginRight : 1}} /></Button>
                     </div>
                     </Grid>
                 </Grid>
